@@ -1,0 +1,222 @@
+:root {
+    --clr-primary-100: hsl(14, 45%, 36%);
+    --clr-primary-900: hsl(332, 51%, 32%);
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-300: hsl(330, 100%, 98%);
+    --clr-neutral-400: hsl(30, 54%, 90%);
+    --clr-neutral-500: hsl(30, 18%, 87%);
+    --clr-neutral-600: hsl(30, 18%, 87%);
+    --clr-neutral-700: hsl(30, 10%, 34%);
+    --clr-neutral-800: hsl(24, 5%, 18%);
+
+    --fs-400: 16px;
+    --ff-young: "Young Serif", serif;
+    --ff-outfit: "Outfit", sans-serif;
+
+    --border-radius-sm: 10px;
+}
+
+.ff-outfit {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ff-young-serif {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--ff-young);
+}
+
+p, span, em {
+    font-family: var(--ff-outfit);
+    line-height: 1.5;
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+ul li em, ol li em {
+    font-style: normal;
+    font-weight: 600;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+header .header-title-wrapper {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+header .header-title-wrapper h1 {
+    line-height: 1;
+    color: var(--clr-neutral-800);
+}
+
+header .header-title-wrapper p {
+    line-height: 1.5;
+    color: var(--clr-neutral-700);
+}
+
+.preparation-time-wrapper {
+    background-color: var(--clr-neutral-300);
+    padding: 1rem;
+}
+
+.preparation-time {
+    font-size: 1.2rem;
+    color: var(--clr-primary-900);
+    font-weight: 600;
+}
+
+.preparation-time-wrapper em {
+    color: var(--clr-neutral-700);
+    font-style: normal;
+}
+
+.preparation-time-wrapper ul {
+    margin-left: 2rem;
+    padding: 1rem;
+    padding-left: 0;
+}
+
+.preparation-time-wrapper ul > li:not(:last-child) {
+    margin-bottom: .75rem;
+}
+
+.preparation-time-wrapper ul span {
+    color: var(--clr-neutral-700);
+}
+
+main {
+    padding: 1rem;
+}
+
+main > hr {
+    margin-block: 2rem;
+    height: 1px; 
+    border: 0;
+    background-color: var(--clr-neutral-600);
+}
+
+section h2 {
+    color: var(--clr-primary-100);
+    margin-bottom: 1.5rem;
+}
+
+section ul, section ol {
+    margin-left: 2rem;
+    color: var(--clr-neutral-700);
+}
+
+section ul > li:not(:last-child), section ol > li:not(:last-child) {
+    margin-bottom: .75rem;
+}
+
+section h2 + p {
+    color: var(--clr-neutral-700);
+    margin-bottom: 1.2rem;
+}
+
+section table {
+    margin: 0 auto;
+    font-family: var(--ff-outfit);
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr td {
+    padding: .75rem;
+}
+
+table tr td:first-child {
+    color: var(--clr-neutral-700);
+    padding-left: 2rem;
+}
+
+table tr td:last-child {
+    color: var(--clr-primary-100);
+    font-weight: 600;
+}
+
+table tbody tr:not(:last-child) {
+    border-bottom: 1px solid var(--clr-neutral-600);
+}
+
+/* List styles */
+
+ul li::marker,ol li::marker {
+    color: var(--clr-primary-900);
+    font-weight: 600;
+    font-family: var(--ff-outfit);
+}
+
+ul li > *, ol li > * {
+    position: relative;
+    left: 20px;
+    width: 95%;
+    display: inline-block;
+}
+
+@media screen and (min-width: 650px) {
+    body {
+        background-color: var(--clr-neutral-400);
+        padding: 3rem;
+    }
+
+    .card {
+        max-width: 500px;
+        margin-inline: auto;
+        background-color: var(--clr-neutral-100);
+        border-radius: var(--border-radius-sm);
+        padding: 2rem;
+    }
+
+    header {
+        gap: 2rem;
+    }
+
+    header img {
+        border-radius: var(--border-radius-sm);
+    }
+
+    header .header-title-wrapper {
+        padding: 0;
+    }
+
+    main {
+        padding: 0;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    body {
+        padding: 5rem;
+        font-size: 1.2rem;
+    }
+
+    .card {
+        max-width: 750px;
+        padding: 3rem;
+    }
+}
