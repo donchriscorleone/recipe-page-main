@@ -24,8 +24,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/mobile-first-using-plain-css-E2r4FJvIbo)
-- Live Site URL: [Add live site URL here](https://donchriscorleone.github.io/recipe-page-main/)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/mobile-first-using-plain-css-E2r4FJvIbo)
+- Live Site URL: [Github](https://donchriscorleone.github.io/recipe-page-main/)
 
 ## My process
 
